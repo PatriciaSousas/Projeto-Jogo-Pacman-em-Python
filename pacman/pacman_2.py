@@ -6,33 +6,24 @@ screen = pygame.display.set_mode((800, 600), 0)
 
 AMARELO = (255, 255, 0)
 PRETO = (0, 0, 0)
+VELOCIDADE = 1  # type: int
 
 class Pacman:
     def __init__(self):
         self.centro_x = 400
         self.centro_y = 300
-        self.tamanho = 30
-        self.vel_x = 1
-        self.vel_y = 1
+        self.coluna = 2
+        self.linha = 2
+        self.tamanho = 800//50
+        self.vel_x = 0
+        self.vel_y = 0
         self.RAIO = self.tamanho // 2
 
     def calcular_regras (self):
-        self.centro_x = self.centro_x + self.vel_x
-        self.centro_y = self.centro_y +self.vel_y
-
-        if self.centro_x +self.RAIO >800:
-            self.vel_x = -1
-        if self.centro_x - self.RAIO <0:
-            self.vel_x = 1
-
-        if self.centro_y +self.RAIO >600:
-            self.vel_y = -1
-        if self.centro_y - self.RAIO <0:
-            self.vel_y= 1
-
-
-
-
+        self.coluna = self.coluna + self.vel_x
+        self.linha = self.linha +self.vel_y
+        self.centro_x = int(self.coluna* self.tamanho + self.RAIO)
+        self.centro_y = int(self.linha* self.tamanho + self. RAIO)
 
 
 
@@ -54,6 +45,29 @@ class Pacman:
         olho_raio = int(self.RAIO / 10)
         pygame.draw.circle(tela, PRETO, (olho_x, olho_y), olho_raio)
 
+    def processar_eventos(self, eventos):
+        for e in eventos:
+            if e.type == pygame.KEYDOWN:
+                if e.key == pygame.K_RIGHT:
+                    self.vel_x = VELOCIDADE
+                if e.key == pygame.K_LEFT:
+                    self.vel_x = -VELOCIDADE
+                if e.key == pygame.K_UP:
+                    self.vel_y = -VELOCIDADE
+                if e.key == pygame.K_DOWN:
+                    self.vel_y = VELOCIDADE
+
+            elif e.type == pygame.KEYUP:
+                if e.key == pygame.K_RIGHT:
+                    self.vel_x = 0
+                if e.key == pygame.K_LEFT:
+                    self.vel_x = 0
+                if e.key == pygame.K_UP:
+                    self.vel_y = 0
+                if e.key == pygame.K_DOWN:
+                    self.vel_y = 0
+
+
 if __name__ == "__main__":
     pacman = Pacman()
 
@@ -67,8 +81,13 @@ if __name__ == "__main__":
         screen.fill(PRETO)
         pacman.pintar(screen)
         pygame.display.update()
+        pygame. time. delay(100)
 
         #captura os eventos
-        for e in pygame.event.get():
-            if e.type == pygame.QUIT:
+        eventos = pygame.event.get()
+        for e in eventos:
+            if e.type ==pygame.QUIT:
                 exit()
+
+        pacman.processar_eventos(eventos)
+
