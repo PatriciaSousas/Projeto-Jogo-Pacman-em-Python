@@ -13,6 +13,7 @@ class cenario:
     def __init__(self, tamanho, pac):
         self.pacman = pac
         self.tamanho = tamanho
+        self.pontos = 0
         self.matriz = [
             [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
             [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2],
@@ -68,6 +69,9 @@ class cenario:
         
         if (0 <= col < 28) and (0 <= lin < 29):
             self.pacman.aceitar_movimento()
+        if self.matriz[lin][col] == 1:
+            self.pontos += 1
+            self.matriz[lin][col] = 0
 
 class Pacman:
     def __init__(self, tamanho):
