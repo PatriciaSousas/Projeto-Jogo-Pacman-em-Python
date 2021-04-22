@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68c592a7-c701-415e-9802-215c25747dfb" name="Default Changelist" comment="Adicionada regras de intenção de movimento do pacman.&#10;Adicionada regra de limitação de movimento dentro das bordas do labirinto.">
+    <list default="true" id="68c592a7-c701-415e-9802-215c25747dfb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pacman/pacman_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/pacman/pacman_2.py" afterDir="false" />
     </list>
@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pacman/pacman_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+            <state relative-caret-position="119">
+              <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -211,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618770892136</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pontuação do jogo">
+      <created>1618955754962</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618955754962</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -223,7 +230,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29575163" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29575163" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -268,7 +275,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adicionada regras de intenção de movimento do pacman.&#10;Adicionada regra de limitação de movimento dentro das bordas do labirinto." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionada regras de intenção de movimento do pacman.&#10;Adicionada regra de limitação de movimento dentro das bordas do labirinto." />
+    <MESSAGE value="pontuação do jogo" />
+    <option name="LAST_COMMIT_MESSAGE" value="pontuação do jogo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pacmandois/pacman" />
@@ -300,10 +308,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pygame/font.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pacman/pacman_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+        <state relative-caret-position="119">
+          <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
         </state>
       </provider>
     </entry>
