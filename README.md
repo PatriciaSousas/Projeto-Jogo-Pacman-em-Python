@@ -4,7 +4,7 @@
 
  ###  Desenvolvido com Pygame uma biblioteca baseada em SDL  e Python com foco em games e interfaces gráficas.
 
-Alguns pontos legais que abordei nesse projeto:
+Alguns pontos interessantes que abordei nesse projeto:
 
 - ImplementeI o jogo Pacman, utilizando a linguagem Python e a biblioteca Pygame
 - Funcionamento das coordenadas da tela, sistema de cores e movimentação do personagem
