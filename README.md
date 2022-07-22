@@ -6,7 +6,7 @@
 
 Alguns pontos legais que abordei nesse projeto:
 
-- Implemente o jogo Pacman, utilizando a linguagem Python e a biblioteca Pygame
+- ImplementeI o jogo Pacman, utilizando a linguagem Python e a biblioteca Pygame
 - Funcionamento das coordenadas da tela, sistema de cores e movimentação do personagem
 - Eventos do Pygame e os seus principais tipos
 - Movimento do personagem com o house e com o teclado 
